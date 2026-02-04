@@ -1,0 +1,1009 @@
+<!doctype html>
+
+<html lang="id" class="h-full">
+
+ <head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reyhan Bintang | Professional Stock Investor Portfolio</title>
+
+  <script src="/_sdk/element_sdk.js"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+
+        body {
+
+            box-sizing: border-box;
+
+        }
+
+        
+
+        html, body {
+
+            height: 100%;
+
+        }
+
+        
+
+        .main-wrapper {
+
+            width: 100%;
+
+            height: 100%;
+
+            overflow-auto;
+
+        }
+
+        
+
+        .gradient-red { background: linear-gradient(135deg, #8b0000 0%, #ff0000 100%); }
+
+        .card-dark { background: #161616; border: 1px solid #262626; transition: 0.3s; }
+
+        .card-dark:hover { border-color: #ff4d4d; transform: translateY(-4px); }
+
+        .text-glow { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+
+        
+
+        .stat-card {
+
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+
+            border: 1px solid #262626;
+
+            transition: all 0.3s ease;
+
+        }
+
+        
+
+        .stat-card:hover {
+
+            border-color: #ff4d4d;
+
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.1);
+
+        }
+
+        
+
+        .stock-badge {
+
+            background: rgba(255, 0, 0, 0.1);
+
+            border: 1px solid rgba(255, 0, 0, 0.3);
+
+            padding: 8px 16px;
+
+            border-radius: 8px;
+
+            font-weight: 600;
+
+        }
+
+        
+
+        @keyframes fadeInUp {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(30px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+        
+
+        .fade-in-up {
+
+            animation: fadeInUp 0.6s ease-out forwards;
+
+        }
+
+    </style>
+
+  <style>@view-transition { navigation: auto; }</style>
+
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+
+ </head>
+
+ <body class="overflow-x-hidden">
+
+  <div class="main-wrapper" style="background-color: #0a0a0a; color: #e5e5e5; font-family: 'Inter', sans-serif;">
+
+   <nav class="fixed w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+     <div class="flex items-center gap-3">
+
+      <div class="w-10 h-10 gradient-red rounded-full flex items-center justify-center font-bold text-white">
+
+       RB
+
+      </div><span class="text-xl font-bold tracking-tighter" id="nav-name">REYHAN <span class="text-red-600">BINTANG</span></span>
+
+     </div>
+
+     <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest"><a href="#home" class="hover:text-red-500 transition">Beranda</a> <a href="#about" class="hover:text-red-500 transition">Tentang Saya</a> <a href="#portfolio" class="hover:text-red-500 transition">Portofolio</a> <a href="#analysis" class="hover:text-red-500 transition">Analisis</a> <a href="#contact" class="px-4 py-2 gradient-red rounded text-white hover:opacity-80 transition">Kontak</a>
+
+     </div>
+
+    </div>
+
+   </nav>
+
+   <section id="home" class="relative pt-32 pb-20 px-6 overflow-hidden">
+
+    <div class="absolute top-20 right-[-10%] w-[500px] h-[500px] bg-red-900/20 blur-[120px] rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+     <div>
+
+      <h2 class="text-red-500 font-bold mb-2 tracking-widest uppercase text-sm" id="tagline">Professional Investor</h2>
+
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight" id="hero-title">GROW YOUR WEALTH WITH <span class="text-glow text-white">STRATEGY.</span></h1>
+
+      <p class="text-gray-400 text-lg mb-8 max-w-lg" id="hero-description">Menggabungkan analisis teknikal presisi dan fundamental mendalam untuk pertumbuhan aset yang berkelanjutan di pasar modal.</p>
+
+      <div class="flex gap-4"><a href="#portfolio" class="px-8 py-3 gradient-red font-bold rounded-full hover:scale-105 transition shadow-lg shadow-red-900/20">Lihat Portofolio</a> <a href="https://instagram.com/dinofartt" id="instagram-link" target="_blank" rel="noopener noreferrer" class="px-8 py-3 border border-white/20 font-bold rounded-full hover:bg-white/5 transition flex items-center gap-2"> <i class="fab fa-instagram"></i> <span id="instagram-handle">dinofartt</span> </a>
+
+      </div>
+
+     </div>
+
+     <div class="relative"><img src="https://img.sanishtech.com/u/c6db4e80d0fd850b3f91bddae6a59a00.jpg" alt="Reyhan Bintang - Professional Stock Investor" loading="lazy" onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%)'; this.alt='Image unavailable';" class="w-full h-[500px] object-cover rounded-2xl border border-white/10 shadow-2xl relative z-10">
+
+      <div class="absolute -bottom-6 -left-6 bg-red-600 p-6 rounded-xl z-20 hidden md:block">
+
+       <p class="text-3xl font-bold">15%+</p>
+
+       <p class="text-xs uppercase tracking-tighter">Average Annual Return</p>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </section>
+
+   <section id="about" class="py-20 px-6 bg-[#0f0f0f]">
+
+    <div class="max-w-7xl mx-auto">
+
+     <h3 class="text-3xl font-bold mb-12 flex items-center gap-4"><span class="w-12 h-[2px] bg-red-600"></span> <span id="about-heading">Tentang Saya</span></h3>
+
+     <div class="grid md:grid-cols-2 gap-12">
+
+      <div>
+
+       <p class="text-gray-400 text-lg leading-relaxed mb-6" id="about-description">Investor profesional dengan pengalaman lebih dari 5 tahun di pasar modal Indonesia. Spesialisasi dalam analisis fundamental perusahaan blue-chip dan growth stocks dengan pendekatan value investing yang telah terbukti menghasilkan return konsisten.</p>
+
+       <div class="grid grid-cols-2 gap-4 mt-8">
+
+        <div class="stat-card p-6 rounded-xl">
+
+         <p class="text-4xl font-bold text-red-500 mb-2">5+</p>
+
+         <p class="text-sm text-gray-400 uppercase tracking-wide">Tahun Pengalaman</p>
+
+        </div>
+
+        <div class="stat-card p-6 rounded-xl">
+
+         <p class="text-4xl font-bold text-red-500 mb-2">25+</p>
+
+         <p class="text-sm text-gray-400 uppercase tracking-wide">Saham Dianalisis</p>
+
+        </div>
+
+       </div>
+
+      </div>
+
+      <div class="space-y-6">
+
+       <div class="card-dark p-6 rounded-xl">
+
+        <div class="flex items-center gap-4 mb-4">
+
+         <div class="w-12 h-12 gradient-red rounded-lg flex items-center justify-center"><i class="fas fa-chart-line text-xl"></i>
+
+         </div>
+
+         <h4 class="text-xl font-bold">Analisis Teknikal</h4>
+
+        </div>
+
+        <p class="text-gray-400">Menggunakan indikator candlestick patterns, support/resistance, dan volume analysis untuk timing entry dan exit yang optimal.</p>
+
+       </div>
+
+       <div class="card-dark p-6 rounded-xl">
+
+        <div class="flex items-center gap-4 mb-4">
+
+         <div class="w-12 h-12 gradient-red rounded-lg flex items-center justify-center"><i class="fas fa-building text-xl"></i>
+
+         </div>
+
+         <h4 class="text-xl font-bold">Analisis Fundamental</h4>
+
+        </div>
+
+        <p class="text-gray-400">Evaluasi mendalam laporan keuangan, competitive advantage, dan growth potential untuk investasi jangka panjang yang menguntungkan.</p>
+
+       </div>
+
+       <div class="card-dark p-6 rounded-xl">
+
+        <div class="flex items-center gap-4 mb-4">
+
+         <div class="w-12 h-12 gradient-red rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-xl"></i>
+
+         </div>
+
+         <h4 class="text-xl font-bold">Risk Management</h4>
+
+        </div>
+
+        <p class="text-gray-400">Strategi diversifikasi portfolio dan position sizing yang ketat untuk meminimalkan risiko sambil memaksimalkan return.</p>
+
+       </div>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </section>
+
+   <section id="portfolio" class="py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+     <h3 class="text-3xl font-bold mb-12 flex items-center gap-4"><span class="w-12 h-[2px] bg-red-600"></span> <span>Portfolio Unggulan</span></h3>
+
+     <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="card-dark p-6 rounded-xl">
+
+       <div class="flex justify-between items-start mb-4">
+
+        <div>
+
+         <h4 class="text-2xl font-bold">BBCA</h4>
+
+         <p class="text-sm text-gray-500">Bank Central Asia</p>
+
+        </div><span class="stock-badge text-green-400">+12.5%</span>
+
+       </div>
+
+       <p class="text-gray-400 text-sm mb-4">Blue-chip banking sector dengan fundamental kuat dan dividend yield konsisten.</p>
+
+       <div class="flex gap-2"><span class="text-xs bg-white/5 px-3 py-1 rounded-full">Banking</span> <span class="text-xs bg-white/5 px-3 py-1 rounded-full">Blue Chip</span>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-6 rounded-xl">
+
+       <div class="flex justify-between items-start mb-4">
+
+        <div>
+
+         <h4 class="text-2xl font-bold">TLKM</h4>
+
+         <p class="text-sm text-gray-500">Telkom Indonesia</p>
+
+        </div><span class="stock-badge text-green-400">+8.3%</span>
+
+       </div>
+
+       <p class="text-gray-400 text-sm mb-4">Leader telekomunikasi dengan ekspansi digital yang agresif dan stabil.</p>
+
+       <div class="flex gap-2"><span class="text-xs bg-white/5 px-3 py-1 rounded-full">Telecom</span> <span class="text-xs bg-white/5 px-3 py-1 rounded-full">Dividend</span>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-6 rounded-xl">
+
+       <div class="flex justify-between items-start mb-4">
+
+        <div>
+
+         <h4 class="text-2xl font-bold">ASII</h4>
+
+         <p class="text-sm text-gray-500">Astra International</p>
+
+        </div><span class="stock-badge text-green-400">+15.2%</span>
+
+       </div>
+
+       <p class="text-gray-400 text-sm mb-4">Konglomerat diversifikasi dengan exposure ke automotive dan mining.</p>
+
+       <div class="flex gap-2"><span class="text-xs bg-white/5 px-3 py-1 rounded-full">Diversified</span> <span class="text-xs bg-white/5 px-3 py-1 rounded-full">Growth</span>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-6 rounded-xl">
+
+       <div class="flex justify-between items-start mb-4">
+
+        <div>
+
+         <h4 class="text-2xl font-bold">UNVR</h4>
+
+         <p class="text-sm text-gray-500">Unilever Indonesia</p>
+
+        </div><span class="stock-badge text-green-400">+6.7%</span>
+
+       </div>
+
+       <p class="text-gray-400 text-sm mb-4">Consumer goods leader dengan brand portfolio yang kuat dan margin tinggi.</p>
+
+       <div class="flex gap-2"><span class="text-xs bg-white/5 px-3 py-1 rounded-full">Consumer</span> <span class="text-xs bg-white/5 px-3 py-1 rounded-full">Defensive</span>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-6 rounded-xl">
+
+       <div class="flex justify-between items-start mb-4">
+
+        <div>
+
+         <h4 class="text-2xl font-bold">BBRI</h4>
+
+         <p class="text-sm text-gray-500">Bank Rakyat Indonesia</p>
+
+        </div><span class="stock-badge text-green-400">+11.8%</span>
+
+       </div>
+
+       <p class="text-gray-400 text-sm mb-4">Bank BUMN dengan penetrasi UMKM terbesar dan pertumbuhan kredit solid.</p>
+
+       <div class="flex gap-2"><span class="text-xs bg-white/5 px-3 py-1 rounded-full">Banking</span> <span class="text-xs bg-white/5 px-3 py-1 rounded-full">BUMN</span>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-6 rounded-xl">
+
+       <div class="flex justify-between items-start mb-4">
+
+        <div>
+
+         <h4 class="text-2xl font-bold">GOTO</h4>
+
+         <p class="text-sm text-gray-500">GoTo Gojek Tokopedia</p>
+
+        </div><span class="stock-badge text-red-400">-3.2%</span>
+
+       </div>
+
+       <p class="text-gray-400 text-sm mb-4">Tech platform terbesar dengan potensi turnaround dan ekspansi regional.</p>
+
+       <div class="flex gap-2"><span class="text-xs bg-white/5 px-3 py-1 rounded-full">Technology</span> <span class="text-xs bg-white/5 px-3 py-1 rounded-full">Speculative</span>
+
+       </div>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </section>
+
+   <section id="analysis" class="py-20 px-6 bg-[#0f0f0f]">
+
+    <div class="max-w-7xl mx-auto">
+
+     <h3 class="text-3xl font-bold mb-12 flex items-center gap-4"><span class="w-12 h-[2px] bg-red-600"></span> <span>Analisis &amp; Insight Terbaru</span></h3>
+
+     <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="card-dark p-8 rounded-xl">
+
+       <div class="flex items-center gap-3 mb-4"><span class="w-3 h-3 bg-red-500 rounded-full"></span> <span class="text-sm text-gray-500 uppercase tracking-widest">Market Update</span>
+
+       </div>
+
+       <h4 class="text-2xl font-bold mb-4">IHSG Bertahan di 7.200: Peluang Akumulasi Sektor Perbankan</h4>
+
+       <p class="text-gray-400 mb-6">Analisis teknikal menunjukkan support kuat di level 7.150-7.200. Sektor banking khususnya BBCA dan BBRI menunjukkan pattern bullish dengan volume meningkat. Rekomendasi: accumulate on dip.</p>
+
+       <div class="flex items-center justify-between"><span class="text-sm text-gray-500">24 Januari 2025</span> <a href="#" class="text-red-500 font-semibold hover:underline">Baca Selengkapnya →</a>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-8 rounded-xl">
+
+       <div class="flex items-center gap-3 mb-4"><span class="w-3 h-3 bg-red-500 rounded-full"></span> <span class="text-sm text-gray-500 uppercase tracking-widest">Stock Analysis</span>
+
+       </div>
+
+       <h4 class="text-2xl font-bold mb-4">ASII: Momentum Rebound Sektor Otomotif di 2025</h4>
+
+       <p class="text-gray-400 mb-6">Fundamental ASII membaik dengan penjualan kendaraan naik 18% YoY. PBV 1.2x masih undervalued dibanding historical average. Target price Rp 6.500 dengan upside 15%. Entry recommended di Rp 5.500-5.700.</p>
+
+       <div class="flex items-center justify-between"><span class="text-sm text-gray-500">22 Januari 2025</span> <a href="#" class="text-red-500 font-semibold hover:underline">Baca Selengkapnya →</a>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-8 rounded-xl">
+
+       <div class="flex items-center gap-3 mb-4"><span class="w-3 h-3 bg-red-500 rounded-full"></span> <span class="text-sm text-gray-500 uppercase tracking-widest">Strategy</span>
+
+       </div>
+
+       <h4 class="text-2xl font-bold mb-4">Strategi Diversifikasi Portfolio untuk Risk-Adjusted Return Optimal</h4>
+
+       <p class="text-gray-400 mb-6">Kombinasi 60% blue-chip (BBCA, TLKM, ASII), 30% growth (GOTO, BUKA), dan 10% defensive (UNVR, ICBP) terbukti memberikan sharpe ratio terbaik. Risk management dengan stop loss 8% per posisi.</p>
+
+       <div class="flex items-center justify-between"><span class="text-sm text-gray-500">20 Januari 2025</span> <a href="#" class="text-red-500 font-semibold hover:underline">Baca Selengkapnya →</a>
+
+       </div>
+
+      </div>
+
+      <div class="card-dark p-8 rounded-xl">
+
+       <div class="flex items-center gap-3 mb-4"><span class="w-3 h-3 bg-red-500 rounded-full"></span> <span class="text-sm text-gray-500 uppercase tracking-widest">Education</span>
+
+       </div>
+
+       <h4 class="text-2xl font-bold mb-4">Cara Membaca Laporan Keuangan untuk Investor Pemula</h4>
+
+       <p class="text-gray-400 mb-6">Panduan lengkap memahami P/E ratio, PBV, ROE, dan debt-to-equity ratio. Plus checklist analisis fundamental 5 menit untuk screening saham potensial sebelum invest.</p>
+
+       <div class="flex items-center justify-between"><span class="text-sm text-gray-500">18 Januari 2025</span> <a href="#" class="text-red-500 font-semibold hover:underline">Baca Selengkapnya →</a>
+
+       </div>
+
+      </div>
+
+     </div>
+
+    </div>
+
+   </section>
+
+   <section id="contact" class="py-20 px-6">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+     <h3 class="text-4xl md:text-5xl font-bold mb-6" id="contact-heading">Mari Berdiskusi Tentang Investasi Anda</h3>
+
+     <p class="text-gray-400 text-lg mb-12">Tertarik untuk belajar lebih lanjut atau ingin berdiskusi tentang strategi investasi? Hubungi saya melalui kontak di bawah.</p>
+
+     <div class="grid md:grid-cols-3 gap-6 mb-12">
+
+      <div class="card-dark p-8 rounded-xl">
+
+       <div class="w-16 h-16 gradient-red rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-envelope text-2xl"></i>
+
+       </div>
+
+       <h4 class="font-bold mb-2">Email</h4>
+
+       <p class="text-gray-400" id="contact-email-display">reyhan@example.com</p>
+
+      </div>
+
+      <div class="card-dark p-8 rounded-xl">
+
+       <div class="w-16 h-16 gradient-red rounded-full flex items-center justify-center mx-auto mb-4"><i class="fab fa-instagram text-2xl"></i>
+
+       </div>
+
+       <h4 class="font-bold mb-2">Instagram</h4>
+
+       <p class="text-gray-400">@<span id="instagram-handle-footer">dinofartt</span></p>
+
+      </div>
+
+      <div class="card-dark p-8 rounded-xl">
+
+       <div class="w-16 h-16 gradient-red rounded-full flex items-center justify-center mx-auto mb-4"><i class="fab fa-linkedin text-2xl"></i>
+
+       </div>
+
+       <h4 class="font-bold mb-2">LinkedIn</h4>
+
+       <p class="text-gray-400">Reyhan Bintang</p>
+
+      </div>
+
+     </div><a href="mailto:reyzlabp@gmail.com" id="email-cta" class="inline-block px-12 py-4 gradient-red font-bold rounded-full text-lg hover:scale-105 transition shadow-2xl shadow-red-900/30"> Kirim Email </a>
+
+    </div>
+
+   </section>
+
+   <footer class="py-8 px-6 border-t border-white/10 bg-[#0f0f0f]">
+
+    <div class="max-w-7xl mx-auto text-center text-gray-500 text-sm">
+
+     <p>© 2025 Reyhan Bintang. All rights reserved. | Investment carries risk. Past performance does not guarantee future results.</p>
+
+    </div>
+
+   </footer>
+
+  </div>
+
+  <script>
+
+        const defaultConfig = {
+
+            investor_name: "Reyhan Bintang",
+
+            tagline: "Professional Investor",
+
+            hero_title: "GROW YOUR WEALTH WITH STRATEGY.",
+
+            hero_description: "Menggabungkan analisis teknikal presisi dan fundamental mendalam untuk pertumbuhan aset yang berkelanjutan di pasar modal.",
+
+            instagram_handle: "dinofartt",
+
+            about_heading: "Tentang Saya",
+
+            about_description: "Investor profesional dengan pengalaman lebih dari 5 tahun di pasar modal Indonesia. Spesialisasi dalam analisis fundamental perusahaan blue-chip dan growth stocks dengan pendekatan value investing yang telah terbukti menghasilkan return konsisten.",
+
+            contact_heading: "Mari Berdiskusi Tentang Investasi Anda",
+
+            contact_email: "reyzlabp@gmail.com",
+
+            background_color: "#0a0a0a",
+
+            accent_color: "#ff0000",
+
+            text_color: "#e5e5e5",
+
+            card_background: "#161616",
+
+            font_family: "Inter",
+
+            font_size: 16
+
+        };
+
+        async function onConfigChange(config) {
+
+            const investorName = config.investor_name || defaultConfig.investor_name;
+
+            const tagline = config.tagline || defaultConfig.tagline;
+
+            const heroTitle = config.hero_title || defaultConfig.hero_title;
+
+            const heroDescription = config.hero_description || defaultConfig.hero_description;
+
+            const instagramHandle = config.instagram_handle || defaultConfig.instagram_handle;
+
+            const aboutHeading = config.about_heading || defaultConfig.about_heading;
+
+            const aboutDescription = config.about_description || defaultConfig.about_description;
+
+            const contactHeading = config.contact_heading || defaultConfig.contact_heading;
+
+            const contactEmail = config.contact_email || defaultConfig.contact_email;
+
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+
+            const accentColor = config.accent_color || defaultConfig.accent_color;
+
+            const textColor = config.text_color || defaultConfig.text_color;
+
+            const cardBackground = config.card_background || defaultConfig.card_background;
+
+            const customFont = config.font_family || defaultConfig.font_family;
+
+            const baseSize = config.font_size || defaultConfig.font_size;
+
+            // Update text content
+
+            const navNameEl = document.getElementById('nav-name');
+
+            if (navNameEl) {
+
+                const nameParts = investorName.split(' ');
+
+                if (nameParts.length > 1) {
+
+                    navNameEl.innerHTML = `${nameParts[0]} <span class="text-red-600">${nameParts.slice(1).join(' ')}</span>`;
+
+                } else {
+
+                    navNameEl.textContent = investorName;
+
+                }
+
+            }
+
+            const taglineEl = document.getElementById('tagline');
+
+            if (taglineEl) taglineEl.textContent = tagline;
+
+            const heroTitleEl = document.getElementById('hero-title');
+
+            if (heroTitleEl) {
+
+                const titleParts = heroTitle.split('STRATEGY.');
+
+                if (titleParts.length > 1) {
+
+                    heroTitleEl.innerHTML = `${titleParts[0]}<span class="text-glow text-white">STRATEGY.</span>${titleParts[1] || ''}`;
+
+                } else {
+
+                    heroTitleEl.textContent = heroTitle;
+
+                }
+
+            }
+
+            const heroDescEl = document.getElementById('hero-description');
+
+            if (heroDescEl) heroDescEl.textContent = heroDescription;
+
+            const instagramHandleEl = document.getElementById('instagram-handle');
+
+            if (instagramHandleEl) instagramHandleEl.textContent = instagramHandle;
+
+            const instagramHandleFooterEl = document.getElementById('instagram-handle-footer');
+
+            if (instagramHandleFooterEl) instagramHandleFooterEl.textContent = instagramHandle;
+
+            const instagramLinkEl = document.getElementById('instagram-link');
+
+            if (instagramLinkEl) {
+
+                instagramLinkEl.href = `https://instagram.com/${instagramHandle}`;
+
+            }
+
+            const profileNameEl = document.getElementById('profile-name');
+
+            if (profileNameEl) profileNameEl.textContent = investorName;
+
+            const aboutHeadingEl = document.getElementById('about-heading');
+
+            if (aboutHeadingEl) aboutHeadingEl.textContent = aboutHeading;
+
+            const aboutDescEl = document.getElementById('about-description');
+
+            if (aboutDescEl) aboutDescEl.textContent = aboutDescription;
+
+            const contactHeadingEl = document.getElementById('contact-heading');
+
+            if (contactHeadingEl) contactHeadingEl.textContent = contactHeading;
+
+            const contactEmailDisplayEl = document.getElementById('contact-email-display');
+
+            if (contactEmailDisplayEl) contactEmailDisplayEl.textContent = contactEmail;
+
+            const emailCtaEl = document.getElementById('email-cta');
+
+            if (emailCtaEl) emailCtaEl.href = `mailto:${contactEmail}`;
+
+            // Update colors
+
+            const mainWrapper = document.querySelector('.main-wrapper');
+
+            if (mainWrapper) {
+
+                mainWrapper.style.backgroundColor = backgroundColor;
+
+                mainWrapper.style.color = textColor;
+
+            }
+
+            const gradientRedEls = document.querySelectorAll('.gradient-red');
+
+            gradientRedEls.forEach(el => {
+
+                el.style.background = `linear-gradient(135deg, ${accentColor}CC 0%, ${accentColor} 100%)`;
+
+            });
+
+            const textRedEls = document.querySelectorAll('.text-red-500, .text-red-600');
+
+            textRedEls.forEach(el => {
+
+                el.style.color = accentColor;
+
+            });
+
+            const borderRedEls = document.querySelectorAll('.bg-red-600');
+
+            borderRedEls.forEach(el => {
+
+                el.style.backgroundColor = accentColor;
+
+            });
+
+            const cardDarkEls = document.querySelectorAll('.card-dark, .stat-card');
+
+            cardDarkEls.forEach(el => {
+
+                el.style.backgroundColor = cardBackground;
+
+            });
+
+            // Update fonts
+
+            const baseFontStack = 'system-ui, -apple-system, sans-serif';
+
+            mainWrapper.style.fontFamily = `${customFont}, ${baseFontStack}`;
+
+            // Update font sizes proportionally
+
+            const h1Els = document.querySelectorAll('h1');
+
+            h1Els.forEach(el => {
+
+                el.style.fontSize = `${baseSize * 3}px`;
+
+            });
+
+            const h2Els = document.querySelectorAll('h2');
+
+            h2Els.forEach(el => {
+
+                el.style.fontSize = `${baseSize * 0.875}px`;
+
+            });
+
+            const h3Els = document.querySelectorAll('h3');
+
+            h3Els.forEach(el => {
+
+                el.style.fontSize = `${baseSize * 1.875}px`;
+
+            });
+
+            const h4Els = document.querySelectorAll('h4');
+
+            h4Els.forEach(el => {
+
+                el.style.fontSize = `${baseSize * 1.25}px`;
+
+            });
+
+            const pEls = document.querySelectorAll('p:not(.text-xs):not(.text-sm)');
+
+            pEls.forEach(el => {
+
+                el.style.fontSize = `${baseSize}px`;
+
+            });
+
+            const smallTextEls = document.querySelectorAll('.text-sm');
+
+            smallTextEls.forEach(el => {
+
+                el.style.fontSize = `${baseSize * 0.875}px`;
+
+            });
+
+            const xsTextEls = document.querySelectorAll('.text-xs');
+
+            xsTextEls.forEach(el => {
+
+                el.style.fontSize = `${baseSize * 0.75}px`;
+
+            });
+
+        }
+
+        function mapToCapabilities(config) {
+
+            return {
+
+                recolorables: [
+
+                    {
+
+                        get: () => config.background_color || defaultConfig.background_color,
+
+                        set: (value) => {
+
+                            config.background_color = value;
+
+                            window.elementSdk.setConfig({ background_color: value });
+
+                        }
+
+                    },
+
+                    {
+
+                        get: () => config.card_background || defaultConfig.card_background,
+
+                        set: (value) => {
+
+                            config.card_background = value;
+
+                            window.elementSdk.setConfig({ card_background: value });
+
+                        }
+
+                    },
+
+                    {
+
+                        get: () => config.text_color || defaultConfig.text_color,
+
+                        set: (value) => {
+
+                            config.text_color = value;
+
+                            window.elementSdk.setConfig({ text_color: value });
+
+                        }
+
+                    },
+
+                    {
+
+                        get: () => config.accent_color || defaultConfig.accent_color,
+
+                        set: (value) => {
+
+                            config.accent_color = value;
+
+                            window.elementSdk.setConfig({ accent_color: value });
+
+                        }
+
+                    }
+
+                ],
+
+                borderables: [],
+
+                fontEditable: {
+
+                    get: () => config.font_family || defaultConfig.font_family,
+
+                    set: (value) => {
+
+                        config.font_family = value;
+
+                        window.elementSdk.setConfig({ font_family: value });
+
+                    }
+
+                },
+
+                fontSizeable: {
+
+                    get: () => config.font_size || defaultConfig.font_size,
+
+                    set: (value) => {
+
+                        config.font_size = value;
+
+                        window.elementSdk.setConfig({ font_size: value });
+
+                    }
+
+                }
+
+            };
+
+        }
+
+        function mapToEditPanelValues(config) {
+
+            return new Map([
+
+                ["investor_name", config.investor_name || defaultConfig.investor_name],
+
+                ["tagline", config.tagline || defaultConfig.tagline],
+
+                ["hero_title", config.hero_title || defaultConfig.hero_title],
+
+                ["hero_description", config.hero_description || defaultConfig.hero_description],
+
+                ["instagram_handle", config.instagram_handle || defaultConfig.instagram_handle],
+
+                ["about_heading", config.about_heading || defaultConfig.about_heading],
+
+                ["about_description", config.about_description || defaultConfig.about_description],
+
+                ["contact_heading", config.contact_heading || defaultConfig.contact_heading],
+
+                ["contact_email", config.contact_email || defaultConfig.contact_email]
+
+            ]);
+
+        }
+
+        if (window.elementSdk) {
+
+            window.elementSdk.init({
+
+                defaultConfig,
+
+                onConfigChange,
+
+                mapToCapabilities,
+
+                mapToEditPanelValues
+
+            });
+
+        }
+
+        // Smooth scroll for navigation
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function (e) {
+
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+
+                if (target) {
+
+                    target.scrollIntoView({
+
+                        behavior: 'smooth',
+
+                        block: 'start'
+
+                    });
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c8b6ddb47568be4',t:'MTc3MDIyMTMzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
